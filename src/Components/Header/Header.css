@@ -1,0 +1,145 @@
+div.header,
+div.toggle,
+div.togbutton,
+div.nums {
+    display: flex;
+}
+
+div.header {
+    align-items: flex-end;
+    color: var(--header);
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+div.header>p {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+div.toggle {
+    align-items: flex-end;
+    gap: 25px;
+}
+
+div.toggle>p {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+div.togbutton {
+    flex-direction: column;
+    gap: 4px;
+    width: 70px;
+}
+
+div.nums {
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+}
+
+div.nums span {
+    cursor: pointer;
+}
+
+div.outer {
+    background-color: var(--toggle-keypad-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    height: 25px;
+    padding: 6px;
+    position: relative;
+    width: 100%;
+}
+
+div.outer:hover div.in {
+    background-color: var(--eq-toggle-hover);
+}
+
+div.in {
+    background-color: var(--eq-toggle);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 17px;
+    position: absolute;
+    top: 4px;
+    width: 17px;
+}
+
+div.in:hover {
+    background-color: var(--eq-toggle-hover);
+}
+
+.first {
+    left: 6px;
+}
+
+.second {
+    left: 25px;
+}
+
+.third {
+    left: 47px;
+}
+
+@keyframes second {
+    from {
+        left: 6px;
+    }
+
+    to {
+        left: 25px;
+    }
+}
+
+@keyframes third {
+    from {
+        left: 25px
+    }
+
+    to {
+        left: 47px;
+    }
+}
+
+@keyframes first {
+    from {
+        left: 47px;
+    }
+
+    to {
+        left: 6px;
+    }
+}
+
+@keyframes secondToFirst {
+    from {
+        left: 25px
+    }
+
+    to {
+        left: 6px;
+    }
+}
+
+@keyframes thirdToSecond {
+    from {
+        left: 47px;
+    }
+
+    to {
+        left: 25px;
+    }
+}
+
+@keyframes firstToThird {
+    from {
+        left: 6px;
+    }
+
+    to {
+        left: 47px;
+    }
+}

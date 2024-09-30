@@ -1,0 +1,30 @@
+div.calc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 540px;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-height: 700px) {
+    div.calc {
+        font-size: 12px;
+        width: 460px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.calc {
+        font-size: 12px;
+        width: 100%;
+    }
+}

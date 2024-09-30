@@ -1,0 +1,21 @@
+div.screen {
+    align-items: center;
+    background: var(--screen-bg);
+    border-radius: 10px;
+    color: var(--header);
+    display: flex;
+    font-size: 44px;
+    font-weight: bold;
+    height: 125px;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 30px;
+    width: 100%;
+}
+
+@media (max-height: 700px) {
+    div.screen {
+        font-size: 34px;
+        height: 100px;
+    }
+}
